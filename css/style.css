@@ -3,3 +3,58 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+:root{
+    --whatsapp_window_height: 850px;
+}
+
+    header{
+        background-color: #009688;
+        width: 100%;
+        height: 10vh;
+    }
+
+    main{
+        background-color: #dbdbd4;
+        width: 100%;
+        height: 90vh;
+        display: flex;
+        justify-content: center;
+        position: relative;
+    }
+
+        .whatsapp_widow{
+            z-index: 500;
+            width: 1600px;
+            height: var(--whatsapp_window_height);
+            background-color: #fff;
+            position: absolute;
+            top: -50px;
+            display: flex;
+        }
+
+
+            /* Parte sinistra */
+        
+            .sx_side{
+                width: 35%;
+                height: var(--whatsapp_window_height);
+                display: flex;
+                flex-direction: column;
+            
+                /* DEBUG */
+                outline: 1px black solid;
+
+            }
+
+
+            /* Parte destra */
+
+            .dx_side{
+                width: 65%;
+                height: var(--whatsapp_window_height);
+
+                /* DEBUG */
+                outline: 1px black solid;
+
+            }
