@@ -89,6 +89,18 @@ img{
                                 font-weight: 500;
                             }
 
+                    .user_actions{
+                        display: flex;
+                    }
+
+                        .stories{
+                            padding-right: 20px;
+                        }
+
+                        .chats{
+                            padding-right: 20px;
+                        }
+
                 .notifications_alert{
                     width: 100%;
                     height: 50px;
@@ -213,7 +225,7 @@ img{
 
                                 .contact_name{
                                     font-size: 15px;
-                                    font-weight: 400px;
+                                    font-weight: 400;
                                 }
 
                                 .last_message{
@@ -245,30 +257,118 @@ img{
                     width: 100%;
                     height: 50px;
                     background-color: #fafafa;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    padding: 0 10px;
 
                     /* DEBUG */
                 outline: 1px black solid;
                 }
+
+                    .pic_in-chat{
+                        width: 30px;
+                        height: 30px;
+                    }
+
+                    .contact_name_and_lastSeen{
+                        height: 50px;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        padding-left: 10px;
+                    }
+
+                        .contact_lastSeen{
+                            font-size: 11px;
+                        }
+
+                .chat_actions{
+                    display: flex;
+                }
+
+                    .search_in-chat{
+                        padding-right: 20px;
+                    }
+
+                    .attach_in-chat{
+                        padding-right: 20px;
+                    }
 
                 .messages_container{
                     width: 100%;
                     height: 790px;
                     background-image: url(../imgs/mine.jpg);
 
+                    display: flex;
+                    flex-direction: column;
+
 
                     /* DEBUG */
                 outline: 1px black solid;
 
                 }
 
-                .user_message_input{
+
+                .user_spacing-dx{
+                    display: flex;
+                    justify-content: right;
+                }
+
+                .user_spacing-sx{
+                    display: flex;
+                    justify-content: left;
+                }
+
+                    .message{
+                        width: auto;
+                        max-width: 500px;
+                        margin: 10px;
+                        padding: 5px 10px;
+                        border-radius: 10px;
+                        overflow: hidden;
+                    }
+
+                        .for_user{
+                            background-color: #d5f9ba;
+                        }
+
+                        .for_contact{
+                            background-color: #fff;
+                        }
+
+                            .hour-inMessage_position{
+                                display: flex;
+                                justify-content: flex-end;
+                                padding-top: 3px;
+                            }
+
+                                .message-hour{
+                                    font-size: 10px;
+                                }
+
+                
+
+                .user-message_input-container{
                     width: 100%;
                     height: 50px;
                     background-color: #f3eeea;
-
-
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
 
                     /* DEBUG */
                 outline: 1px black solid;
 
                 }
+
+                    .button_user-message{
+                        width: 5%;
+                        height: 40px;
+                        font-size: 20px;
+                    }
+
+                        .user_message_inputField{
+                            width: 88%;
+                            height: 40px;
+                        }
