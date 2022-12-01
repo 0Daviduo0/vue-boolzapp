@@ -3,12 +3,12 @@ const { createApp } = Vue;
 createApp ({
     data() {
         return {
+            indexElem: 0,
             contacts: [
                 {
                     name: 'Michele',
                     avatar: 'imgs/avatar_1.jpg',
                     visible: true,
-                    indexElem: 0,
                     messages: [
                         {
                             date: '10/01/2020 15:30:55',
@@ -176,12 +176,12 @@ createApp ({
     },
     methods: {
         chatOpener(contact, index){
-            console.log(contact.name)
-            console.log(contact.messages);
-            console.log(index);
+            console.log(contact.name);
+            console.log(contact.messages, contact.messages.length);
+            
 
-            indexElem = index
-            console.log(indexElem)
+            indexElem = index;
+            console.log("adesso l'idex è", indexElem);
             
         }
     }
