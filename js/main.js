@@ -3,7 +3,8 @@ const { createApp } = Vue;
 createApp ({
     data() {
         return {
-            indexElem: 0,
+            search: '',
+            indexElem: '0',
             contacts: [
                 {
                     name: 'Michele',
@@ -166,12 +167,7 @@ createApp ({
                         }
                     ],
                 }
-            ]
-            
-            
-            
-            
-
+            ],
         }
     },
     methods: {
@@ -180,9 +176,25 @@ createApp ({
             console.log(contact.messages, contact.messages.length);
             
 
-            indexElem = index;
-            console.log("adesso l'idex è", indexElem);
-            
-        }
-    }
+            this.indexElem = index;
+            console.log("adesso l'idex è", this.indexElem);
+
+            // var sent = contact.messages.filter(function(sent){
+            //     if(sent.status == "sent") return sent.message;
+            // });            
+            // console.log("questi sono i messaggi spediti", sent);
+
+            // this.inviati.push(sent);
+            // console.log(this.inviati);
+
+            // var received = contact.messages.filter(function(received){
+            //     if(received.status == "received") return received.message;
+            // });
+            // console.log("questi sono i messaggi ricevuti", received);
+
+            // this.ricevuti.push(received);
+            // console.log(this.ricevuti);
+
+        },
+    },
 }).mount("#app")

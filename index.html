@@ -89,7 +89,7 @@
                             <button id="search_button">
                                 <i class="fa-solid fa-magnifying-glass"></i>
                             </button>
-                            <input id="search_input" type="text" placeholder="Cerca o inizia una nuova chat">
+                            <input id="search_input" type="text" v-model="search" placeholder="Cerca o inizia una nuova chat">
 
                         </div>
 
@@ -141,7 +141,7 @@
                             <div class="contact_name_and_lastSeen">
 
                                 <div class="contact_name">
-                                    PlaceholderName
+                                    {{ contacts[indexElem].name }}
                                 </div>
                                 <div class="contact_lastSeen">
                                     PlaceholderSeen
@@ -171,16 +171,16 @@
 
                     <div class="messages_container">
 
-                        <div class="user_spacing-dx">
+                        <div class="user_spacing-dx" v-for="message in contacts[indexElem].messages">
 
-                            <div class="message for_user">
+                            <div class="message for_user" >
 
                                 <div class="message_content">
-                                    
+                                    {{ message.message }}
                                 </div>
                                 <div class="hour-inMessage_position">
                                     <div class="message-hour">
-                                        PlaceholderHourMess
+                                        {{ message.date }}
                                     </div>
                                 </div>
                                 
@@ -188,16 +188,16 @@
 
                         </div>
                         
-                        <div class="user_spacing-sx">
+                        <div class="user_spacing-sx" v-for="message in contacts[indexElem].messages">
 
                             <div class="message for_contact">
 
                                 <div class="message_content">
-                                    PlaceholderMessContact
+                                    {{ message.message }}
                                 </div>
                                 <div class="hour-inMessage_position">
                                     <div class="message-hour">
-                                        PlaceholderHourMess
+                                        {{ message.date }}
                                     </div>
                                 </div>
                                 
