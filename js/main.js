@@ -8,6 +8,7 @@ createApp ({
                     name: 'Michele',
                     avatar: 'imgs/avatar_1.jpg',
                     visible: true,
+                    indexElem: 0,
                     messages: [
                         {
                             date: '10/01/2020 15:30:55',
@@ -174,6 +175,14 @@ createApp ({
         }
     },
     methods: {
+        chatOpener(contact, index){
+            console.log(contact.name)
+            console.log(contact.messages);
+            console.log(index);
 
+            indexElem = index
+            console.log(indexElem)
+            
+        }
     }
 }).mount("#app")

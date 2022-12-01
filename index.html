@@ -97,7 +97,7 @@
 
                     <div class="contacts_container">
 
-                        <div class="contact_card" v-for="(contact, index) in contacts">
+                        <div class="contact_card" v-for="(contact, index) in contacts" @click="chatOpener(contact, index)">
                             <div class="contact_info">
 
                                 <div class="contact_profile-pic">
@@ -176,7 +176,7 @@
                             <div class="message for_user">
 
                                 <div class="message_content">
-                                    PlaceholderMessUser
+                                    PlaceholderUserMess
                                 </div>
                                 <div class="hour-inMessage_position">
                                     <div class="message-hour">
