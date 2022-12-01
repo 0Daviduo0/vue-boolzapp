@@ -249,7 +249,7 @@ img{
                 flex-direction: column;
 
                 /* DEBUG */
-                outline: 1px black solid;
+                /* outline: 1px black solid; */
 
             }
 
@@ -263,7 +263,7 @@ img{
                     padding: 0 10px;
 
                     /* DEBUG */
-                outline: 1px black solid;
+                /* outline: 1px black solid; */
                 }
 
                     .pic_in-chat{
@@ -305,7 +305,7 @@ img{
 
 
                     /* DEBUG */
-                outline: 1px black solid;
+                /* outline: 1px black solid; */
 
                 }
 
@@ -358,7 +358,7 @@ img{
                     align-items: center;
 
                     /* DEBUG */
-                outline: 1px black solid;
+                /* outline: 1px black solid; */
 
                 }
 

@@ -97,16 +97,16 @@
 
                     <div class="contacts_container">
 
-                        <div class="contact_card">
+                        <div class="contact_card" v-for="(contact, index) in contacts">
                             <div class="contact_info">
 
                                 <div class="contact_profile-pic">
-                                    <img src="imgs/avatar_1.jpg" alt="">
+                                    <img :src="contact.avatar" alt="">
                                 </div>
                                 <div class="name_and_message">
 
                                     <div class="contact_name">
-                                        PlaceholderName
+                                        {{contact.name}}
                                     </div>
                                     <div class="last_message">
                                         PlaceholderMess
@@ -121,133 +121,6 @@
                             </div>
 
                         </div>
-
-                    <!-- Test for more chats -->
-
-                        <!-- <div class="contact_card">
-                            <div class="contact_info">
-
-                                <div class="contact_profile-pic">
-                                    <img src="imgs/avatar_1.jpg" alt="">
-                                </div>
-                                <div class="name_and_message">
-
-                                    <div class="contact_name">
-                                        PlaceholderName
-                                    </div>
-                                    <div class="last_message">
-                                        PlaceholderMess
-                                    </div>
-
-                                </div>
-                                
-                            </div>
-
-                            <div class="hour">
-                                PlaceholderHour
-                            </div>
-
-                        </div>
-
-                        <div class="contact_card">
-                            <div class="contact_info">
-
-                                <div class="contact_profile-pic">
-                                    <img src="imgs/avatar_1.jpg" alt="">
-                                </div>
-                                <div class="name_and_message">
-
-                                    <div class="contact_name">
-                                        PlaceholderName
-                                    </div>
-                                    <div class="last_message">
-                                        PlaceholderMess
-                                    </div>
-
-                                </div>
-                                
-                            </div>
-
-                            <div class="hour">
-                                PlaceholderHour
-                            </div>
-
-                        </div>
-
-                        <div class="contact_card">
-                            <div class="contact_info">
-
-                                <div class="contact_profile-pic">
-                                    <img src="imgs/avatar_1.jpg" alt="">
-                                </div>
-                                <div class="name_and_message">
-
-                                    <div class="contact_name">
-                                        PlaceholderName
-                                    </div>
-                                    <div class="last_message">
-                                        PlaceholderMess
-                                    </div>
-
-                                </div>
-                                
-                            </div>
-
-                            <div class="hour">
-                                PlaceholderHour
-                            </div>
-
-                        </div>
-
-                        <div class="contact_card">
-                            <div class="contact_info">
-
-                                <div class="contact_profile-pic">
-                                    <img src="imgs/avatar_1.jpg" alt="">
-                                </div>
-                                <div class="name_and_message">
-
-                                    <div class="contact_name">
-                                        PlaceholderName
-                                    </div>
-                                    <div class="last_message">
-                                        PlaceholderMess
-                                    </div>
-
-                                </div>
-                                
-                            </div>
-
-                            <div class="hour">
-                                PlaceholderHour
-                            </div>
-
-                        </div>
-
-                        <div class="contact_card">
-                            <div class="contact_info">
-
-                                <div class="contact_profile-pic">
-                                    <img src="imgs/avatar_1.jpg" alt="">
-                                </div>
-                                <div class="name_and_message">
-
-                                    <div class="contact_name">
-                                        PlaceholderName
-                                    </div>
-                                    <div class="last_message">
-                                        PlaceholderMess
-                                    </div>
-
-                                </div>
-                                
-                            </div>
-
-                            <div class="hour">
-                                PlaceholderHour
-                            </div>
-
-                        </div> -->
 
                     </div>
 
