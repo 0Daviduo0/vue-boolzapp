@@ -310,12 +310,12 @@ img{
                 }
 
 
-                .user_spacing-dx{
+                .user-spacing-dx{
                     display: flex;
                     justify-content: right;
                 }
 
-                .user_spacing-sx{
+                .user-spacing-sx{
                     display: flex;
                     justify-content: left;
                 }

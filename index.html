@@ -171,7 +171,7 @@
 
                     <div class="messages_container">
 
-                        <div class="user_spacing-dx" v-for="message in contacts[indexElem].messages">
+                        <div v-for="message in contacts[indexElem].messages"  :class="( user-spacing-dx : message.status == sent )" :class="( user-spacing-sx : message.status == received )">
 
                             <div class="message for_user" >
 
@@ -188,7 +188,7 @@
 
                         </div>
                         
-                        <div class="user_spacing-sx" v-for="message in contacts[indexElem].messages">
+                        <!-- <div class="user_spacing-sx" v-for="message in contacts[indexElem].messages">
 
                             <div class="message for_contact">
 
@@ -204,7 +204,7 @@
                                 
                             </div>
 
-                        </div>
+                        </div> -->
 
                     </div>
 
