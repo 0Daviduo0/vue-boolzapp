@@ -182,6 +182,9 @@ createApp ({
         addMessage(){
             this.contacts[this.indexElem].messages.push({ message: this.new_user_message, status: 'sent' });
             this.new_user_message = "";
+            setTimeout(()=>{
+                this.contacts[this.indexElem].messages.push({ message: "ok", status: 'received' });
+            }, 2000)
         },
     },
 }).mount("#app")
