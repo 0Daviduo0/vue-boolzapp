@@ -171,12 +171,12 @@
 
                     <div class="messages_container">
 
-                        <div v-for="message in contacts[indexElem].messages"  :class="message.status === sent ? 'user-spacing-dx' : 'user-spacing-sx' " >
+                        <div v-for="message in contacts[indexElem].messages"  :class="message.status === `sent` ? 'user-spacing-dx' : 'user-spacing-sx' " >
 
-                            <div class="message for_user" >
+                            <div class="message" :class="message.status === `sent` ? 'for_user' : 'for_contact' ">
 
                                 <div class="message_content">
-                                    {{ message.status }}
+                                    {{ message.message }}
                                 </div>
                                 <div class="hour-inMessage_position">
                                     <div class="message-hour">
