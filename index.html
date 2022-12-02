@@ -171,7 +171,7 @@
 
                     <div class="messages_container">
 
-                        <div v-for="message in contacts[indexElem].messages"  :class="message.status === `sent` ? 'user-spacing-dx' : 'user-spacing-sx' " >
+                        <div v-for="message in contacts[indexElem].messages"  :class="message.status === `sent` ? 'user-spacing-dx' : 'user-spacing-sx' ">
 
                             <div class="message" :class="message.status === `sent` ? 'for_user' : 'for_contact' ">
 
@@ -213,7 +213,7 @@
                         <button class="button_user-message emoji-button">
                             <i class="fa-solid fa-face-smile"></i>
                         </button>
-                        <input type="text" class="user_message_inputField">
+                        <input type="text" class="user_message_inputField" v-model="new_user_message" @keyUp.enter="addMessage">
                         <button class="button_user-message microphone-button">
                             <i class="fa-solid fa-microphone"></i>
                         </button>
