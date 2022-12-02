@@ -186,12 +186,12 @@ createApp ({
                 this.contacts[this.indexElem].messages.push({ message: "ok", status: 'received' });
             }, 2000)
         },
-        computed: {
-            filteredList() {
-              return this.contacts.filter(contact => {
-                return contact.name.toLowerCase().includes(this.search.toLowerCase())
-              })
-            }
-          }
     },
+    computed: {
+        filteredList() {
+          return this.contacts.filter(contact => {
+            return contact.name.toLowerCase().includes(this.search.toLowerCase())
+          })
+        }
+      }
 }).mount("#app")
